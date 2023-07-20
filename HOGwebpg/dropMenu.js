@@ -2,7 +2,7 @@
     function menuButton() {
         document.getElementById("myDropdown").classList.toggle("show");
     }
-
+    window.addEventListener("mouseover");
     window.addEventListener("click", function(event) {
         if (!event.target.matches(".dropbtn")) {
             var dropdowns = document.getElementsByClassName("dropdown-content");
