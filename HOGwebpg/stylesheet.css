@@ -253,5 +253,11 @@ hr{
     margin-left: 200px;
     line-height: 1.5;
 }
-    
+/* Links */ 
+#links {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    margin: 100px;
+    padding: auto;
+}
 
