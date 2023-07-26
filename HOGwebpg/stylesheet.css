@@ -222,9 +222,16 @@ hr{
     background-color: rgb(243, 241, 241);
 }
 
-#calendar{
+#calendar {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
+    margin-top: 30px; 
+}
+
+#calendar iframe {
+    width: 70%; 
+    height: 800px; 
+    border: solid #FF6600;
 }
 
 /* FOOTER ACROSS ALL PAGES*/
