@@ -44,6 +44,7 @@ hr{
     align-items: center; 
     justify-content: space-between;
     background-color: #FF6600;
+    width: 100%;
 }
 
 #logoheader{
@@ -146,6 +147,8 @@ hr{
 #midPageImg{
     display: flex;
     justify-content: center;
+    width:"800";
+    height:"600";
 }
 
 #board{
@@ -240,7 +243,7 @@ hr{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     height: 175px;
-    width: auto;
+    width: 100%;
     background-color: #FF6600;
     line-height: .5;  
     margin-top: 30px;
@@ -250,6 +253,12 @@ hr{
     align-self: center;
     justify-self: center;
     line-height: .5;      
+}
+
+#logoBarbs{
+    margin-top: 50px;
+    width: 200px;
+    
 }
 
 #followUs{
@@ -265,12 +274,6 @@ hr{
     width: 70px;
     margin-left: 15px;
 }
-iframe{
-    height: 150px;
-    width: 150px;
-    margin-top: 10px;
-}
-
 /* OFFICERS */
 
 #directorsBoard{
@@ -324,9 +327,124 @@ iframe{
     margin: 30px;
 }
 
-#logoBarbs{
-    margin-top: 50px;
-    width: 200px;
+
+/* Media Queries for responsiveness */
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1199px) {
+    /* Make necessary adjustments for tablets here */
+    body {
+        font-size: 18px;
+    }
     
+    h2 {
+        font-size: 30px;
+        padding: 20px;
+    }
+    
+    h3 {
+        font-size: 24px;
+        margin-left: 20px;
+    }
+
+    .footer{
+        grid-template-columns: 1fr;
+    }
+    
+    /* Add more adjustments for other elements as needed */
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    /* Make necessary adjustments for mobile here */
+    body {
+        font-size: 16px;
+    }
+    
+    h2 {
+        font-size: 24px;
+        padding: 10px;
+    }
+    
+    h3 {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    /* Adjustments for the header */
+    #header {
+        grid-template-columns: 1fr; /* Single column for mobile */
+        width: 100%;
+    }
+
+    #logoheader {
+        margin-left: 20px; /* Reduce margin for logo */
+    }
+    #midPageImg{
+        max-width: 100%;
+    }
+
+    .dropdown {
+        margin: 0; /* Remove margins for dropdown in mobile */
+    }
+
+    .dropdown-content {
+        top: 100%; /* Position dropdown below the menu button in mobile */
+        left: 0;
+        min-width: 100%; /* Full-width dropdown in mobile */
+        margin-top: 0;
+    }
+    #frontPic{
+        max-width: 100%;
+    }
+    #anouncements{
+        max-width: 90%;
+        margin: 0;
+    }
+    #bio{
+        grid-template-columns: 1fr;
+    }
+    #camden{
+        max-width: 90%;
+        margin: 0;
+    }
+
+
+    .footer{
+        grid-template-columns: 1fr;
+        width: 100%;
+       
+    }
+    /* Adjustments for the officers */
+
+    #directorsBoard{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0;
+        width: 100%;
+    }
+    #committees {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0;
+        width: 100%;
+    }
+
+
+    /* Adjustments for the calendar */
+    .elementToHide{
+        display: none;
+    }
+    /* Adjustments for the join */
+
+    #joinInstructions{
+        max-width: 90%;
+        margin: 10px;
+        
+
+    }
+    
+
+    /* Add more adjustments for other elements as needed */
 }
 
