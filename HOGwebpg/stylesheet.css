@@ -144,12 +144,12 @@ hr{
 
   /* INDEX HOME */
 
-#midPageImg{
-    display: flex;
-    justify-content: center;
-    width:"800";
-    height:"600";
-}
+  #midPageImg {
+    display: block ;
+    margin: auto;
+    width: 80%;
+
+} 
 
 #board{
     margin-left: 50px;
@@ -256,8 +256,8 @@ hr{
 }
 
 #logoBarbs{
-    margin-top: 50px;
-    width: 200px;
+    margin-top: 40px;
+    width: 250px;
     
 }
 
@@ -270,8 +270,8 @@ hr{
 }
 
 .gryph{
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     margin-left: 15px;
 }
 /* OFFICERS */
@@ -351,12 +351,12 @@ hr{
         grid-template-columns: 1fr;
     }
     
-    /* Add more adjustments for other elements as needed */
+   
 }
 
 /* Mobile */
 @media (max-width: 767px) {
-    /* Make necessary adjustments for mobile here */
+   
     body {
         font-size: 16px;
     }
@@ -373,25 +373,26 @@ hr{
 
     /* Adjustments for the header */
     #header {
-        grid-template-columns: 1fr; /* Single column for mobile */
+        grid-template-columns: 1fr; 
         width: 100%;
     }
 
     #logoheader {
-        margin-left: 20px; /* Reduce margin for logo */
+        margin-left: 20px; 
     }
     #midPageImg{
-        max-width: 100%;
+        
+        width: 90%;
     }
 
     .dropdown {
-        margin: 0; /* Remove margins for dropdown in mobile */
+        margin: 0; 
     }
 
     .dropdown-content {
-        top: 100%; /* Position dropdown below the menu button in mobile */
+        top: 100%; 
         left: 0;
-        min-width: 100%; /* Full-width dropdown in mobile */
+        min-width: 100%; 
         margin-top: 0;
     }
     #frontPic{
@@ -439,12 +440,12 @@ hr{
 
     #joinInstructions{
         max-width: 90%;
-        margin: 10px;
+        margin: 30px;
         
 
     }
     
 
-    /* Add more adjustments for other elements as needed */
+    
 }
 
