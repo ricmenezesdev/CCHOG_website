@@ -1,5 +1,3 @@
-
-
 /* ACROSS PAGES */
 
 body {
@@ -57,6 +55,8 @@ hr{
     font-size: 40px;
     font-weight: bold;
     margin-left: 10px;
+    text-decoration: none;
+    color: black;
 }
 
 /* Menu Button */
@@ -147,7 +147,8 @@ hr{
   #midPageImg {
     display: block ;
     margin: auto;
-    width: 80%;
+    width: 75%;
+    border-radius: 6px;
 
 } 
 
@@ -270,8 +271,8 @@ hr{
 }
 
 .gryph{
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     margin-left: 15px;
 }
 /* OFFICERS */
@@ -309,24 +310,31 @@ hr{
 #joinInstructions{
     margin-right: 200px;
     margin-left: 200px;
-    line-height: 1.5;
+    text-align: justify;
 }
 
 /* Links */ 
 
-.links {
-
+#linksColums{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 5%;
+        
+}
+.links { 
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    justify-content: left;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(138, 135, 135);
+    border-radius: 12px;
+    margin: 2%;
+    
 }
-.links>img{
-    margin: 30px;
+.linksImg{
+    padding: 5%;
+    align-items: center;
 }
-
 
 /* Media Queries for responsiveness */
 
@@ -371,7 +379,6 @@ hr{
         margin-left: 10px;
     }
 
-    /* Adjustments for the header */
     #header {
         grid-template-columns: 1fr; 
         width: 100%;
@@ -379,10 +386,6 @@ hr{
 
     #logoheader {
         margin-left: 20px; 
-    }
-    #midPageImg{
-        
-        width: 90%;
     }
 
     .dropdown {
@@ -406,18 +409,15 @@ hr{
         grid-template-columns: 1fr;
     }
     #camden{
-        max-width: 90%;
-        margin: 0;
+        width: 90%;
+        margin-left: 15px;
     }
-
-
     .footer{
         grid-template-columns: 1fr;
         width: 100%;
-       
     }
-    /* Adjustments for the officers */
 
+    /* Adjustments for the officers */
     #directorsBoard{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -431,21 +431,30 @@ hr{
         width: 100%;
     }
 
-
     /* Adjustments for the calendar */
     .elementToHide{
         display: none;
     }
+
     /* Adjustments for the join */
-
     #joinInstructions{
-        max-width: 90%;
+        width: 90%;
         margin: 30px;
-        
-
     }
+    /* Adjustments for the links */
     
-
+#linksColums{
+    
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(138, 135, 135);
+    border-radius: 12px;
+    margin: 2%;
+    
+}
     
 }
 
