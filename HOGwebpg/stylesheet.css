@@ -330,6 +330,7 @@ hr{
     padding-bottom: 30px;
 
 }
+/* ALBUNS */
 
 .picAlbuns{
     display: grid;
@@ -386,9 +387,8 @@ hr{
 .album{
         display: grid;
         justify-items: center;
-        align-items: flex-start;
         flex-direction: column;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr ;
         background-color: rgb(122, 115, 115);
         border-radius: 12px;
         border: #FF6600 solid;
@@ -505,12 +505,24 @@ hr{
      /* Adjustments for the photos */
     .picAlbuns{
         display: grid;
-        grid-template-columns: 1fr;
-     
+        grid-template-columns: 1fr;    
     } 
+
+    .galery{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       border-width: 20px ;
+    }
     .album{
         display: grid;
         grid-template-columns: 1fr;
+        
+        
+    }
+    .album>img{
+        width: 300px;
+        
     }
 
     /* Adjustments for the join */
