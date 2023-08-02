@@ -20,6 +20,7 @@ h2{
     align-content: center;
     justify-content: center;
     padding: 20px;
+    
 }
 
 h3{
@@ -198,21 +199,21 @@ hr{
     justify-content: space-between;
     margin-left: 50px;
     margin-right: 50px; 
+    background-color: rgb(209, 205, 205);
+    border-radius: 6px;
 }
 
 #hog{
-    margin-right: 45px;
-    margin-left: 10px;
-    padding-left: 40px;
+   padding: 50px;
     line-height: 1.5;
     text-align: justify;
    
 }
 #camden{
-    margin-left: 45px;
-    margin-right: 10px;
+    padding: 50px;
     line-height: 1.5;
     text-align: justify; 
+    
 }
 #footerImg{
     display: flex;
@@ -283,7 +284,9 @@ hr{
     align-items: center;
     justify-items: center;
     margin-left: 45px;
-    margin-right: 45px;      
+    margin-right: 45px;    
+    background-color:  rgb(138, 135, 135);
+    border-radius: 6px;
 }
 
 #committees{
@@ -294,6 +297,9 @@ hr{
     margin-left: 45px;
     margin-right: 45px; 
     line-height: .5;
+    background-color: rgb(138, 135, 135);
+    border-radius: 6px;
+    
 }
 
 .longEmail{
@@ -303,14 +309,44 @@ hr{
 .memberspic{
     width: 200px;
     height: 250px;
+    border-radius: 12px;
+   margin-top: 30px;
+
 }
 
 /* JOIN US */
 
 #joinInstructions{
-    margin-right: 200px;
-    margin-left: 200px;
+    margin-right: 10%;
+    margin-left: 10%;
+    background-color:  rgb(209, 205, 205);
+    border-radius: 6px;
+}
+#textJoin{
     text-align: justify;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+
+}
+
+.picAlbuns{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    background-color: rgb(138, 135, 135);
+    border-radius: 12px;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin-right: 10%;
+    margin-left: 10%;
+
+}
+.picAlbunsLinks{
+   margin-top: 20px;
+   margin-bottom: 20px;
+   border-radius: 24px;
 }
 
 /* Links */ 
@@ -331,9 +367,37 @@ hr{
     margin: 2%;
     
 }
+
 .linksImg{
     padding: 5%;
     align-items: center;
+}
+
+/* Adjustments for the photo Albuns */
+
+.galery{
+        
+        border: #FF6600 solid;
+        border-width: 80px;
+        list-style-type: none;
+        
+}
+
+.album{
+        display: grid;
+        justify-items: center;
+        align-items: flex-start;
+        flex-direction: column;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: rgb(122, 115, 115);
+        border-radius: 12px;
+        border: #FF6600 solid;
+}
+
+.album>img{
+    width: 300px;
+    padding: 2%;
+    border-radius: 24px;
 }
 
 /* Media Queries for responsiveness */
@@ -407,10 +471,12 @@ hr{
     }
     #bio{
         grid-template-columns: 1fr;
+        justify-items: center;
+       
     }
     #camden{
         width: 90%;
-        margin-left: 15px;
+        
     }
     .footer{
         grid-template-columns: 1fr;
@@ -420,13 +486,13 @@ hr{
     /* Adjustments for the officers */
     #directorsBoard{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         margin: 0;
         width: 100%;
     }
     #committees {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         margin: 0;
         width: 100%;
     }
@@ -436,25 +502,32 @@ hr{
         display: none;
     }
 
+     /* Adjustments for the photos */
+    .picAlbuns{
+        display: grid;
+        grid-template-columns: 1fr;
+     
+    } 
+    .album{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
     /* Adjustments for the join */
     #joinInstructions{
         width: 90%;
-        margin: 30px;
+        margin: auto;
     }
+
     /* Adjustments for the links */
     
-#linksColums{
-    
-    display: flex;
-    flex-direction: column;
-    grid-template-columns: 1fr;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(138, 135, 135);
-    border-radius: 12px;
-    margin: 2%;
-    
-}
+    #linksColums{
+     display: flex;
+     flex-direction: column;
+     grid-template-columns: 1fr;
+     align-items: center;
+     margin: 2%;
+    }
     
 }
 
