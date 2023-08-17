@@ -6,6 +6,7 @@ body {
     margin: auto;
     font-family: Arial,  Helvetica, sans-serif;
     font-size: large;
+    
 }
 
 header{
@@ -150,12 +151,11 @@ hr{
     margin: auto;
     width: 75%;
     border-radius: 6px;
-
 } 
 
-#board{
-    margin-left: 50px;
-    margin-right: 50px;   
+#board{ 
+    margin-left: 10px;
+    margin-right: 10px;   
 }
 
 #whiteBoard{
@@ -165,15 +165,28 @@ hr{
     display: flex;
     justify-content: center;
 }
+.boardgrid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+}
 
 #anouncements{
     font-size: xx-large;
-    display: flex;
-    flex-direction: column ;
+    flex: 1 1 400px;
     justify-content:flex-start;
-    margin-left: 100px;
+    margin-left: 50px;
     list-style: circle;
     line-height: 2;
+}
+
+#lhpic{
+    flex: 1 1 400px;
+    border: #FF6600 solid;
+    border-radius: 12px;
+    margin-right: 50px;
+    height: 700px;
+    width: 600px;
 }
 
 #meetingInfo{
@@ -465,6 +478,10 @@ hr{
     #frontPic{
         max-width: 100%;
     }
+
+    /* Adjustments for the homepage */
+   
+
     #anouncements{
         max-width: 90%;
         margin: 0;
@@ -482,6 +499,12 @@ hr{
         grid-template-columns: 1fr;
         width: 100%;
     }
+    #lhpic{
+       margin: 0;
+        width: 300px;
+        height: 500px;
+    }
+
 
     /* Adjustments for the officers */
     #directorsBoard{
