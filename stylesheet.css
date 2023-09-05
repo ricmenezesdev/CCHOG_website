@@ -24,10 +24,15 @@ h2{
     
 }
 
-h3{
-    margin-left: 100px;
+.downloads{
+    display: grid;
+    justify-items: center;
+    border: #FF6600 solid;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 12px;
+    background-color: #717171;
 }
-
 hr{ 
     margin-right: 45px;
     margin-left: 45px;
