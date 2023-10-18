@@ -20,10 +20,18 @@
         let slideIndex = 1;
         showSlides(slideIndex);
         autoSlide();
+     
+        let slideshowContainers = document.getElementsByClassName("slideshow-container");
+        for (let i = 0; i < slideshowContainers.length; i++) {
+            slideshowContainers[i].addEventListener("mouseover", stopAutoSlide );
+            slideshowContainers[i].addEventListener("mouseout", startAutoSlide);
+        
+    }
     });
-    
+
     let slideIndex = 1;
-    
+    let slideInterval;
+
     function plusSlides(n) {
         showSlides(slideIndex += n);
     }
@@ -53,8 +61,15 @@
     }
     
     function autoSlide() {
-        setInterval(function() {
+        slideInterval = setInterval(function() {
             plusSlides(1); 
-        }, 2000); 
+        }, 5000); 
     }
-    
+
+    function stopAutoSlide(){
+        clearInterval(slideInterval);
+    }
+
+    function startAutoSlide(){
+        autoSlide();
+    }
