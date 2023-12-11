@@ -246,8 +246,10 @@ hr{
 } 
 
 #board{ 
-    margin-left: 10px;
-    margin-right: 10px;   
+    margin-left: 50px;
+    margin-right: 50px; 
+    background-color: rgb(209, 205, 205);
+    border-radius: 6px; 
 }
 
 #whiteBoard{
@@ -256,6 +258,8 @@ hr{
     text-decoration: underline #FF6600;
     display: flex;
     justify-content: center;
+    padding-top: 25px;
+    
 }
 .boardgrid{
     display: flex;
@@ -267,18 +271,18 @@ hr{
     font-size: xx-large;
     flex: 1 1 400px;
     justify-content:flex-start;
-    margin-left: 50px;
     list-style: circle;
     line-height: 2;
+    margin-left: 50px;
+    margin-right: 50px; 
+    
 }
 
 #lhpic{
-    flex: 1 1 400px;
+    
     border: #FF6600 solid;
     border-radius: 12px;
-    margin-right: 50px;
-    height: 700px;
-    width: 600px;
+   
 }
 
 #meetingInfo{
@@ -296,6 +300,7 @@ hr{
     align-self: flex-end;
     margin-right: 45px;
     font-weight: bold;
+    padding-bottom: 25px;
 }
 
 #bio {
