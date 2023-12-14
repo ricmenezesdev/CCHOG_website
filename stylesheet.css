@@ -598,8 +598,8 @@ hr{
         width: 100%;
     }
     #lhpic{
-       margin: 0;
-        width: 90%;
+        width: 100%;
+        height: auto;
         
     }
 
