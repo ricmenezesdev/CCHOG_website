@@ -282,16 +282,14 @@ hr{
     
     border: #FF6600 solid;
     border-radius: 12px;
+    width: auto;
+    height: auto;
    
 }
 
-#meetingInfo{
-    display: flex;
-    justify-content: flex-end;
-    align-self: flex-end;
-    margin-top: 45px;
-    margin-right: 45px;
-    font-weight: bold;
+#hotlinebox{
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #hotline{
@@ -300,7 +298,8 @@ hr{
     align-self: flex-end;
     margin-right: 45px;
     font-weight: bold;
-    padding-bottom: 25px;
+    line-height: 10px;
+   
 }
 
 #bio {
@@ -311,6 +310,12 @@ hr{
     margin-right: 50px; 
     background-color: rgb(209, 205, 205);
     border-radius: 6px;
+}
+#tshirt{
+    padding-left: 4%;
+    line-height: 1;
+    text-align: justify; 
+    font-weight: bold;
 }
 
 #hog{
@@ -353,7 +358,6 @@ hr{
 
 .footer{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     height: 175px;
     width: 100%;
     background-color: #FF6600;
@@ -364,13 +368,16 @@ hr{
 #sponsor{
     align-self: center;
     justify-self: center;
-    line-height: .5;      
+    line-height: .5; 
+    grid-column: 1;     
 }
 
 #logoBarbs{
+    align-self: center;
+    justify-self: center;
     margin-top: 40px;
     width: 250px;
-    
+    grid-column: 2;
 }
 
 #followUs{
@@ -391,7 +398,7 @@ hr{
 #directorsBoard{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    align-items: center;
+    align-items: start;
     justify-items: center;
     margin-left: 45px;
     margin-right: 45px;    
@@ -403,7 +410,7 @@ hr{
 #committees{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    align-items: center;
+    align-items: start;
     justify-items: center;
     margin-left: 45px;
     margin-right: 45px; 
