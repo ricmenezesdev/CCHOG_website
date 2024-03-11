@@ -265,6 +265,11 @@ hr{
     display: flex;
     flex-wrap: wrap;
     justify-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+    line-height: 1.5;
+    font-size: xx-large;
 }
 
 #anouncements{
@@ -292,14 +297,13 @@ hr{
     padding-bottom: 20px;
 }
 
-#hotline{
-    display: flex;
-    justify-content: flex-end;
-    align-self: flex-end;
-    margin-right: 45px;
-    font-weight: bold;
-    line-height: 10px;
-   
+.merch{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+    line-height: 1.5;
+    
+
 }
 
 #bio {
@@ -319,13 +323,13 @@ hr{
 }
 
 #hog{
-   padding: 50px;
+   padding: 10%;
     line-height: 1.5;
     text-align: justify;
    
 }
 #camden{
-    padding: 50px;
+    padding: 10%;
     line-height: 1.5;
     text-align: justify; 
     
