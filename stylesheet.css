@@ -271,9 +271,7 @@ hr{
     line-height: 1.5;
     font-size: xx-large;
 }
-.pastEvents{
-    width: 25%;
-}
+
 #anouncements{
     font-size: x-large;
     flex: 1 1 400px;
