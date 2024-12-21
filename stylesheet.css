@@ -147,26 +147,38 @@ hr{
 
 .dropdown-content a:hover {background-color: #FF6600;}
 
-.show {display:block;}  
+.show {
+    display: block;
+}
 
-  /* INDEX HOME */
-  * {box-sizing:border-box}
+/* INDEX HOME */
+* {
+    box-sizing: border-box;
+}
 
-  /* Slideshow container */
-  .slideshow-container {
-    max-width: 1000px;
+/* Slideshow container */
+.slideshow-container {
+    max-width: 500px; /* Reduce the container width to half */
     position: relative;
     margin: auto;
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
+    overflow: hidden; /* Prevent overflow from images */
+}
+
+/* Hide the images by default */
+.mySlides {
     display: flex;
     align-content: center;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
+}
+
+/* Images in the slideshow */
+.mySlides img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures images fit the container neatly */
+}
+
+/* Next & previous buttons */
+.prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -179,18 +191,19 @@ hr{
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
+}
+
+/* Position the "next button" to the right */
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
   
   /* Caption text */
   .text {
@@ -270,8 +283,29 @@ hr{
     padding-bottom: 1%;
     line-height: 1.5;
     font-size: xx-large;
+    
 }
 
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+    gap: 10px; /* Spacing between images */
+    max-width: 1200px; /* Limit overall width */
+    margin: 0 auto;
+}
+
+.image-grid img {
+    width: 100%; /* Ensure images fit their containers */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Crop and fit images if needed */
+    border-radius: 8px; /* Optional: Rounded corners for aesthetic */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a slight shadow */
+    cursor: pointer; /* Change cursor to a pointer on hover */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+.image-grid img:hover {
+    transform: scale(1.05); /* Slightly enlarge the image */
+}
 #anouncements{
     font-size: x-large;
     flex: 1 1 400px;
