@@ -45,7 +45,7 @@ hr{
 
 #header{
     display: grid;
-    grid-template-columns: 200px 1fr 1fr; 
+    grid-template-columns: 200px 1fr 200px 1fr; 
     align-items: center; 
     justify-content: space-between;
     background-color: #FF6600;
